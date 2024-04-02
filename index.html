@@ -224,7 +224,7 @@
                                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                                   </div>
                               <h2 class="card-title font-semibold text-xl mx-auto text-black">Flexible Sofa</h2>
-                              <p class="text-xl text-black text-center">1339.00 $</p>
+                              <p class="text-xl text-black text-center">339.00 $</p>
                              
                             </div>
                           </div>
@@ -247,14 +247,15 @@
                 </div>
                 <!-- added item display -->
                 <div class=" bg-gray-100 p-12 mt-5 rounded-lg">
-                    <div class="mb-10">
+                    <div id="item_list" class="mb-10">
                         <h2 class="font-medium text-black text-xl">Selected Item</h2>
                         <!-- item will add here -->
+                       
                     </div>
                     <hr class="my-5">
-                    <h2 id="total-price" class="font-medium text-black text-xl">Total price: <span class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
-                    <h2 id="discount" class="font-medium mx-1 text-black text-xl">Discount: <span class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
-                    <h2 id="total" class="font-medium text-black text-xl">Total: <span class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
+                    <h2 class="font-medium text-black text-xl">Total price: <span id="total-price" class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
+                    <h2 class="font-medium mx-1 text-black text-xl">Discount: <span id="discount" class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
+                    <h2 class="font-medium text-black text-xl">Total: <span id="total" class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
                     <hr class="my-5">
                     <button id="make-purchase" class="btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
                     ring-pink-300 border-none font-semibold text-xl text-white mx-auto w-full mt-10">Make Purchase</button>
@@ -282,10 +283,7 @@
           <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
         </aside>
       </footer>
-      
-
-
-
+     
 
 
  <!-- You can open the modal using ID.showModal() method -->
@@ -306,10 +304,10 @@
                 <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                 <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
               </div>
-          <h2 class="card-title font-semibold text-xl mx-auto text-black">Spoon set</h2>
-          <p class="text-xl text-black text-center">39.00 $</p>
+          <h2 id="model1Name" class="card-title font-semibold text-xl mx-auto text-black">Spoon set</h2>
+          <p  id="model1Price" class="text-xl text-black text-center">39.00 $</p>
 
-          <button class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
+          <button onclick="myFunction('model1Name','model1Price')"  class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
          ring-pink-300 border-none text-white font-semibold text-xl">Add To card</button>
          
         </div>
@@ -332,19 +330,15 @@
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                 </div>
-            <h2 class="card-title font-semibold text-xl mx-auto text-black">K. Accessories</h2>
-            <p class="text-xl text-black text-center">25.00 $</p>
+            <h2 id="model2Name"  class="card-title font-semibold text-xl mx-auto text-black">K. Accessories</h2>
+            <p  id="model2Price"  class="text-xl text-black text-center">25.00 $</p>
 
-            <button class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
+            <button onclick="myFunction('model2Name','model2Price')"  class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
             ring-pink-300 border-none text-white font-semibold text-xl">Add To card</button>
             
             </div>
         </div>
     </dialog>
-
-
-
-
 
 
     <!-- model 3 -->
@@ -362,18 +356,15 @@
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                 </div>
-            <h2 class="card-title font-semibold text-xl mx-auto text-black">Home Cooker</h2>
-            <p class="text-xl text-black text-center">49.00 $</p>
+            <h2 id="model3Name"  class="card-title font-semibold text-xl mx-auto text-black">Home Cooker</h2>
+            <p  id="model3Price"  class="text-xl text-black text-center">49.00 $</p>
 
-            <button class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
+            <button onclick="myFunction('model3Name','model3Price')"  class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
             ring-pink-300 border-none text-white font-semibold text-xl">Add To card</button>
             
             </div>
         </div>
     </dialog>
-
-
-
 
 
 
@@ -392,18 +383,15 @@
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                 </div>
-            <h2 class="card-title font-semibold text-xl mx-auto text-black">Sports Back Cap</h2>
-            <p class="text-xl text-black text-center">49.00 $</p>
+            <h2 id="model4Name"  class="card-title font-semibold text-xl mx-auto text-black">Sports Back Cap</h2>
+            <p  id="model4Price" class="text-xl text-black text-center">49.00 $</p>
 
-            <button class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
+            <button onclick="myFunction('model4Name','model4Price')"  class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
             ring-pink-300 border-none text-white font-semibold text-xl">Add To card</button>
             
             </div>
         </div>
     </dialog>
-
-
-
 
 
 
@@ -422,18 +410,15 @@
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                 </div>
-            <h2 class="card-title font-semibold text-xl mx-auto text-black">Full Jersey Set</h2>
-            <p class="text-xl text-black text-center">69.00 $</p>
+            <h2 id="model5Name"  class="card-title font-semibold text-xl mx-auto text-black">Full Jersey Set</h2>
+            <p  id="model5Price"  class="text-xl text-black text-center">69.00 $</p>
 
-            <button class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
+            <button onclick="myFunction('model5Name','model5Price')"  class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
             ring-pink-300 border-none text-white font-semibold text-xl">Add To card</button>
             
             </div>
         </div>
     </dialog>
-
-
-
 
 
 
@@ -452,19 +437,15 @@
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                 </div>
-            <h2 class="card-title font-semibold text-xl mx-auto text-black">Sports cates</h2>
-            <p class="text-xl text-black text-center">159.00 $</p>
+            <h2 id="model6Name"  class="card-title font-semibold text-xl mx-auto text-black">Sports cates</h2>
+            <p id="model6Price"  class="text-xl text-black text-center">149.00 $</p>
 
-            <button class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
+            <button onclick="myFunction('model6Name','model6Price')"  class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
             ring-pink-300 border-none text-white font-semibold text-xl">Add To card</button>
             
             </div>
         </div>
     </dialog>
-
-
-
-
 
 
     <!-- model 7 -->
@@ -482,19 +463,15 @@
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                 </div>
-            <h2 class="card-title font-semibold text-xl mx-auto text-black">Single Relax Chair</h2>
-            <p class="text-xl text-black text-center">189.00 $</p>
+            <h2 id="model7Name"  class="card-title font-semibold text-xl mx-auto text-black">Single Relax Chair</h2>
+            <p id="model7Price"  class="text-xl text-black text-center">189.00 $</p>
 
-            <button class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
+            <button onclick="myFunction('model7Name','model7Price')"  class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
             ring-pink-300 border-none text-white font-semibold text-xl">Add To card</button>
             
             </div>
         </div>
     </dialog>
-
-
-
-
 
 
     <!-- model 8 -->
@@ -512,19 +489,15 @@
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                 </div>
-            <h2 class="card-title font-semibold text-xl mx-auto text-black">Children play</h2>
-            <p class="text-xl text-black text-center">299.00 $</p>
+            <h2 id="model8Name" class="card-title font-semibold text-xl mx-auto text-black">Children play</h2>
+            <p id="model8Price" class="text-xl text-black text-center">299.00 $</p>
 
-            <button class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
+            <button onclick="myFunction('model8Name','model8Price')"  class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
             ring-pink-300 border-none text-white font-semibold text-xl">Add To card</button>
             
             </div>
         </div>
     </dialog>
-
-
-
-
 
 
     <!-- model 9 -->
@@ -542,10 +515,10 @@
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                     <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                 </div>
-            <h2 class="card-title font-semibold text-xl mx-auto text-black">Flexible Sofa</h2>
-            <p class="text-xl text-black text-center">399.00 $</p>
+            <h2 id="model9Name" class="card-title font-semibold text-xl mx-auto text-black">Flexible Sofa</h2>
+            <p id="model9Price" class="text-xl text-black text-center">399.00 $</p>
 
-            <button class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
+            <button onclick="myFunction('model9Name','model9Price')" class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
             ring-pink-300 border-none text-white font-semibold text-xl">Add To card</button>
             
             </div>
@@ -553,26 +526,6 @@
     </dialog>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
+<script src="js/onclick.js"></script>
 </body>
 </html>
