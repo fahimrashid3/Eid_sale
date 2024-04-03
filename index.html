@@ -26,7 +26,7 @@
         <div class="bg-yellow-50 flex px-20 py-10 justify-center items-center flex-col-reverse lg:flex-row">
             <div class="flex-1 text-center sm:mt-12">
                 <p class="font-medium text-3xl text-black">---SALE FEVER---</p>
-                <h1 class="font-bold sm:text-4xl lg:text-6xl w-3/4 text-black justify-center mx-auto my-8">Purchase TK 200 or above & get <span class="text-pink-500">20% off</span></h1>
+                <h1 class="font-bold text-4xl lg:text-6xl w-3/4 text-black justify-center mx-auto my-8">Purchase TK 200 or above & get <span class="text-pink-500">20% off</span></h1>
                 <div class="flex sm:flex-col lg:flex-row justify-center gap-5 lg:items-center ">
                     <p class="font-medium text-2xl text-black">Use Promo Code</p>
                     <button id="sell200-btn" class="sm:mt-5 lg:mt-0 md:mt-0 btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
@@ -42,13 +42,13 @@
     </header>
     <main>
         <!-- main container -->
-        <div class="mt-28 lg:mx-20 grid lg:grid-cols-4 sm:grid-cols-1 ">
+        <div class="mt-28 lg:mx-20 grid lg:grid-cols-4 sm:grid-cols-1">
             <!-- card item container -->
             <div class=" lg:w-3/4 col-span-3">
-                <div>
-                    <h1 class="font-semibold text-4xl to-black">Kitchenware</h1>
+                <div class="mx-auto">
+                    <h1 class="font-semibold text-4xl to-black sm:text-center lg:text-left">Kitchenware</h1>
                     <!-- kitchen section card container -->
-                    <div class="mt-5 grid lg:grid-cols-3 sm:grid-cols-1 lg:gap-5">
+                    <div class="mt-5 grid lg:grid-cols-3 sm:grid-cols-1 lg:gap-5 justify-center">
                         <!-- card 1 -->
                         <div class="card card-compact max-w-96 bg-base-100 shadow-xl drop-shadow-sm p-5 bg-gray-100 mt-5" onclick="my_modal_1.showModal()">
                             <figure class="bg-gray-200 py-5"><img src="images/prod1.png" alt="Shoes" /></figure>
@@ -105,9 +105,9 @@
                         <!--  -->
 
                     </div>
-                    <h1 class="font-semibold text-4xl to-black pt-16">Sportswear</h1>
+                    <h1 class="font-semibold text-4xl to-black pt-16 sm:text-center lg:text-left">Sportswear</h1>
                     <!-- Sportswear section card container -->
-                    <div class="mt-5 grid lg:grid-cols-3 sm:grid-cols-1 lg:gap-5">
+                    <div class="mt-5 grid lg:grid-cols-3 sm:grid-cols-1 lg:gap-5 justify-center">
                         <!-- card 4 -->
                         <div class="card card-compact max-w-96  bg-base-100 shadow-xl drop-shadow-sm p-5 bg-gray-100 mt-5"onclick="my_modal_4.showModal()">
                             <figure class="bg-gray-200 py-5"><img src="images/prod4.png" alt="Shoes" /></figure>
@@ -161,9 +161,9 @@
                           <!--  -->
 
                     </div>
-                    <h1 class="font-semibold text-4xl to-black pt-16">Furniture</h1>
+                    <h1 class="font-semibold text-4xl to-black pt-16 sm:text-center lg:text-left">Furniture</h1>
                     <!-- Furniture section card container -->
-                    <div class="mt-5 grid lg:grid-cols-3 sm:grid-cols-1 lg:gap-5">
+                    <div class="mt-5 grid lg:grid-cols-3 sm:grid-cols-1 lg:gap-5 justify-center">
                         <!-- card 7 -->
                         <div class="card card-compact max-w-96  bg-base-100 shadow-xl drop-shadow-sm p-5 bg-gray-100 mt-5" onclick="my_modal_7.showModal()">
                             <figure class="bg-gray-200 py-5"><img src="images/prod7.png" alt="Shoes" /></figure>
@@ -225,7 +225,7 @@
             <div class="col-span-1">
                 <!-- coupon section -->
                 <div class="bg-gray-100 p-12 rounded-lg mt-14">
-                    <h2 class="font-medium text-xl text-black">Have coupon?</h2>
+                    <h2 class="font-medium text-xl text-black sm:text-center">Have coupon?</h2>
                     <input id="coupon-input" type="text" placeholder="Coupon code" class="input input-bordered max-w-xs" disabled />
                     <button id="discount-apply" class="btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
                     ring-pink-300 border-none text-white">Apply</button>
@@ -234,7 +234,7 @@
                 <!-- added item display -->
                 <div class=" bg-gray-100 p-12 mt-5 rounded-lg">
                     <div class="mb-10 text-black">
-                        <h2 class="font-medium text-black text-xl">Selected Item</h2>
+                        <h2 class="font-medium text-black text-xl sm:text-center">Selected Item</h2>
                         <!-- item will add here -->
                         <div class="flex gap-5">
                             <p>Item Name </p>
@@ -247,9 +247,9 @@
                        
                     </div>
                     <hr class="my-5">
-                    <h2 class="font-medium text-black text-xl">Total price: <span id="total-price" class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
-                    <h2 class="font-medium mx-1 text-black text-xl">Discount: <span id="discount" class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
-                    <h2 class="font-medium text-black text-xl">Total: <span id="total" class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
+                    <h2 class="font-medium text-black text-xl sm:text-center">Total price: <span id="total-price" class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
+                    <h2 class="font-medium mx-1 text-black text-xl sm:text-center">Discount: <span id="discount" class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
+                    <h2 class="font-medium text-black text-xl sm:text-center">Total: <span id="total" class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
                     <hr class="my-5">
                     <button id="make-purchase" class="btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
                     ring-pink-300 border-none font-semibold text-xl text-white mx-auto w-full mt-10" onclick="">Make Purchase</button>
