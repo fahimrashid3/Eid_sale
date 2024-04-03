@@ -30,8 +30,7 @@ function myFunction(name,price){
 
     // get the value of total
     const totalField=document.getElementById('total');
-    const totalString=totalField.innerText;
-    const totalInt=parseFloat(totalString);
+    
 
     // console.log(totalInt);
 
@@ -61,24 +60,26 @@ function myFunction(name,price){
 
         if(coupon==validCoupon){
             // set new discount
-        const newDiscount1Percent=newItemPrice/100;
-        const newDiscount=newDiscount1Percent*20;
-        DiscountField.innerText=newDiscount;
-    
-        // set new total
-        const newTotalTemp=newItemPrice-newDiscount;
-        const total=newTotalTemp+DiscountInt;
-        totalField.innerText=total;
-        return;
+            const newDiscount1Percent=newItemPrice/100;
+            const newDiscount=newDiscount1Percent*20;
+            const newDiscountFixed=newDiscount.toFixed(2);
+            DiscountField.innerText=newDiscountFixed;
+        
+            // set new total
+            const newTotalTemp=newItemPrice-newDiscount;
+            const total=newTotalTemp+DiscountInt;
+            const totalFixed=total.toFixed(2);
+            totalField.innerText=totalFixed;
+           
         }
         else if(coupon==''){
-            alert('Input coupon');
-            return;
+            alert('Please input a coupon.');            
         }
         else{
-            alert('Invalid coupon');
-            return;
+            alert('Invalid coupon.');            
         }
+
+        couponInputField.value='';
         
 
     })
@@ -113,4 +114,34 @@ document.getElementById('sell200-btn').addEventListener('click',function(){
     if(totalPriceInt==0){
         alert("Select item to use coupon");
     }
+})
+
+document.getElementById('make-purchase').addEventListener('click',function(){
+
+    const totalField=document.getElementById('total');
+    const total =totalField.innerText
+
+    if(total>0){
+    my_modal_make_purchase.showModal();
+    }
+    else{
+        alert('Add some item to make purchase')
+    }
+})
+
+document.getElementById('go-home').addEventListener('click',function(){
+
+    const totalPriceField=document.getElementById('total-price');
+    const discountField=document.getElementById('discount');
+    const totalField=document.getElementById('total');
+
+    totalPriceField.innerText='00';
+    discountField.innerText='00';
+    totalField.innerText='00'
+
+    const itemListSection=document.getElementById('item_list');
+    itemListSection.innerHTML='';
+
+    
+
 })

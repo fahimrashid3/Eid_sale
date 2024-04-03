@@ -266,11 +266,27 @@
                     <h2 class="font-medium text-black text-xl">Total: <span id="total" class="text-gray-500">00</span> <span class="text-gray-500">$</span></h2>
                     <hr class="my-5">
                     <button id="make-purchase" class="btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
-                    ring-pink-300 border-none font-semibold text-xl text-white mx-auto w-full mt-10">Make Purchase</button>
+                    ring-pink-300 border-none font-semibold text-xl text-white mx-auto w-full mt-10" onclick="">Make Purchase</button>
                 </div>
             </div>
 
         </div>
+
+        <!-- Open the purchase successful modal -->
+        <dialog id="my_modal_make_purchase" class="modal">
+        <div class="modal-box">
+            <img class="mx-auto" src="images/congo.png" alt="">
+            <p class="text-center font-semibold text-xl">Congratulations </p>
+            <p class="text-center">Your Purchase the product</p>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button id="go-home" class="btn btn-primary bg-pink-500 hover:bg-pink-600 hover:ring focus:bg-pink-700 
+                ring-pink-300 border-none font-semibold text-xl text-white mx-auto w-full mt-10" onclick="">Go home</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
 
     </main>
     <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded mt-28">
