@@ -51,6 +51,8 @@ function myFunction(name,price){
     }
 
    
+
+    // apply button click listener
     
     document.getElementById('discount-apply').addEventListener('click',function(){
 
@@ -79,7 +81,7 @@ function myFunction(name,price){
             alert('Invalid coupon.');            
         }
 
-        couponInputField.value='';
+        
         
 
     })
@@ -100,7 +102,7 @@ function addToCart(name,price){
 }
 
 
-
+// sell200 button event listener
 
 document.getElementById('sell200-btn').addEventListener('click',function(){
     const totalPriceField=document.getElementById('total-price');
@@ -111,11 +113,15 @@ document.getElementById('sell200-btn').addEventListener('click',function(){
         const couponInputField=document.getElementById('coupon-input');
         couponInputField.value='SELL200';
     }
-    if(totalPriceInt==0){
+    else if(totalPriceInt==0){
         alert("Select item to use coupon");
+    }
+    else{
+        alert("add at least total of 200 $ to get off")
     }
 })
 
+// make purchase button event listener 
 document.getElementById('make-purchase').addEventListener('click',function(){
 
     const totalField=document.getElementById('total');
@@ -129,6 +135,7 @@ document.getElementById('make-purchase').addEventListener('click',function(){
     }
 })
 
+// go home button in purchase successful button click listener 
 document.getElementById('go-home').addEventListener('click',function(){
 
     const totalPriceField=document.getElementById('total-price');
@@ -141,6 +148,9 @@ document.getElementById('go-home').addEventListener('click',function(){
 
     const itemListSection=document.getElementById('item_list');
     itemListSection.innerHTML='';
+
+    const couponInputField=document.getElementById('coupon-input')
+    couponInputField.value='';
 
     
 
